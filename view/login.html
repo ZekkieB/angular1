@@ -1,0 +1,16 @@
+<section>
+    <form name="myFrm" novalidate>
+        <div class="textintro">
+            <h1></h1>
+            <p>{{myFrm.email.$valid}}</p>
+        </div>
+        
+           <fieldset>
+            <input type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true">
+            <input type="password" name="password" placeholder="Password">
+        </fieldset>
+        
+        <button type="submit" class="btn">Login</button>
+        <p>or <a href="#/register">register</a></p>
+    </form>
+</section>
